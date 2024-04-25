@@ -19,13 +19,11 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", .upToNextMajor(from: "3.7.0"))
     ],
     targets: [
         .target(
             name: "SVGKit",
             dependencies: [
-                "CocoaLumberjack"
             ],
             path: "Source",
             exclude: [
